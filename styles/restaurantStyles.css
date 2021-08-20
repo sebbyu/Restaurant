@@ -1,0 +1,44 @@
+@import 'Home.css';
+@import 'Menu.css';
+
+.app {
+  background-color:rgb(240, 212, 212);
+  color: black;
+}
+
+#home-tab, #menu-tab, #contact-tab {
+  text-decoration: underline;
+}
+#home-tab:hover, #menu-tab:hover, #contact-tab:hover {
+  font-weight: bold;
+}
+
+.header--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header--header--name {
+  font-family: American Typewriter, serif;
+  font-weight: bold;
+}
+#header--header--image {
+  width: 200px;
+  height: 70px;
+}
+
+#home, #menu, #contact {
+  height: 100%;
+}
+
+#main--main-frame {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}

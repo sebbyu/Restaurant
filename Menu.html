@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/restaurantStyles.css">
+  <title>Menu</title>
+</head>
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/carousel1.jpg" class="d-block w-100" alt="..."
+        style="height: 600px; width: 400px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="font-family: URW Chancery L, cursive;
+          font-size: 80px;">We are opening a new location!</h1>
+          <p>700 Bellevue Way NE #280</p>
+          <p>Bellevue, WA 98004</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/carousel2.jpeg" class="d-block w-100" alt="..."
+        style="height: 600px; width: 400px; opacity: 0.7;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="color: black; font-family: URW Chancery L, cursive;
+          font-size: 60px;"">We're rolling out our seasonal menu, with special options for this season. </h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/carousel3.jpeg" class="d-block w-100" alt="..."
+        style="height: 600px; width: 400px; opacity: 0.7;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="color: black; font-family: URW Chancery L, cursive;
+          font-size: 60px;"">The Drink of the Month is TSG Special Brew.</h1>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- This is menu page where 6 menus are displayed -->
+  <!-- Each row displays three menus -->
+  <!-- Each menu has name, subtitle, description, and price -->
+  <div class="menu">
+    <h3 class="menu--title"
+      style="text-align: center; margin: 40px 0px;">Entrée</h3>
+    <div class="container">
+      <div class="row row-cols-3" id="container--menu">
+        <!-- Menu 1 -->
+        <div class="menu--item col">
+          <h4 class="menu--item--name">Kurobuta Pork Xiao Long Bao</h4>
+          <h6 class="menu--item--subtitle">The modest dumpling that started a legacy.</h6>
+          <p class="menu--item--description">
+            Each of our Xiao Long Bao is carefully 
+            weighed and folded by hand to achieve our 
+            signature Golden Ratio of 18 folds and stuffed 
+            with top-quality Kurobuta pork marinated in 
+            a blend of carefully-selected seasonings. 
+            Paired with the piquant aromas of fresh ginger 
+            and green onion, every bite is the perfect bite.</p>
+          <p class="menu--item--price">$12.50</p>
+        </div>
+  
+        <!-- Menu 2 -->
+        <div class="menu--item col">
+          <h4 class="menu--item--name">House Jidori Chicken Soup (Steamed)</h4>
+          <h6 class="menu--item--subtitle">Delicate yet rich flavors.</h6>
+          <p class="menu--item--description">
+            Choice cuts of Jidori chicken are steamed 
+            for hours with fresh ginger and green onion. 
+            This signature Din Tai Fung dish is light, 
+            but packs a rich aroma.</p>
+          <p class="menu--item--price">$11.50</p>
+        </div>
+  
+        <!-- Menu 3 -->
+        <div class="menu--item col">
+          <h4 class="menu--item--name">Kurobuta Pork Sticky Rice Wrap</h4>
+          <h6 class="menu--item--subtitle">Fragrant sticky rice meets savory pork belly.</h6>
+          <p class="menu--item--description">
+            Locally-grown sticky rice stuffed with 
+            stewed Kurobuta pork belly, wrapped in bamboo 
+            leaves. A traditional dish that's hard to pass up.
+          </p>
+          <p class="menu--item--price">$6.75</p>
+        </div>
+        
+        <!-- Menu 4 -->
+        <div class="menu--item col">
+          <h4 class="menu--item--name">Braised Beef Noodle Soup</h4>
+          <h6 class="menu--item--subtitle">A rich and hearty traditional Taiwanese beef stew.</h6>
+          <p class="menu--item--description">
+            With house-made egg noodles and hearty flavors, 
+            our Braised Beef Soup is carefully cooked for 
+            hours to bring out its signature mildly spicy 
+            and aromatic flavors. Topped with blanched baby 
+            bok choy for a pop of color and crunch.
+          </p>
+          <p class="menu--item--price">$10.50</p>
+        </div>
+      
+        <!-- Menu 5 -->
+        <div class="menu--item col">
+          <h4 class="menu--item--name">Shrimp Fried Rice</h4>
+          <h6 class="menu--item--subtitle">A perfect harmony of flavors.</h6>
+          <p class="menu--item--description">
+            Succulent shrimp, delicately-scrambled egg, 
+            freshly-chopped green onion, and premium sushi-grade 
+            Nishiki rice are tossed together with a touch of salt 
+            and house seasoning over high heat.
+          </p>
+          <p class="menu--item--price">$13.00</p>
+        </div>
+      
+        <!-- Menu 6 -->
+        <div class="menu--item col">
+          <h4 class="menu--item--name">Cucumber Salad</h4>
+          <h6 class="menu--item--subtitle">Light and refreshing, with a hint of spice.</h6>
+          <p class="menu--item--description">
+            Crisp Persian cucumbers combined with cuts of mild 
+            fresno chili peppers and sliced, fresh garlic—all tossed 
+            together with drizzles of sesame oil and our signature 
+            Din Tai Fung chili oil.
+          </p>
+          <p class="menu--item--price">$6.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="beverage">
+    <h3 class="menu--title">Beverages</h3>
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td colspan="2">Milk Tea</td>
+          <td class="menu--item--price">$3.50</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td colspan="2">Taiwanese Hot Teas</td>
+          <td class="menu--item--price">$3.75</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Fresh Orange Green Tea</td>
+          <td class="menu--item--price">$4.00</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td colspan="2">Fruit Slushes</td>
+          <td class="menu--item--price">$5.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  <script src="./js/Menu.js"></script>
+  <noscript>
+    This site is best viewed with JavaScript enabled.
+  </noscript>
+</body>
+</html>
+
+
+

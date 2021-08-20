@@ -1,0 +1,18 @@
+
+.menu--title {
+  margin-left: 20px;
+}
+.menu--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu--item--description {
+  text-align: center;
+  max-width: 500px;
+  font-style: italic;
+  padding: 20px 0px;
+}
+.menu--item--price {
+  font-weight: bold;
+}
