@@ -1,3 +1,7 @@
+// Sebastian You
+// Restaurant Site
+// August, 2021
+
 // This function retrieves all the user inputs
 function retrieveInfo() {
   var inputs = getInputs();
@@ -6,6 +10,7 @@ function retrieveInfo() {
   var beenHereOutput = beenHereBefore ? 
   "I have been here before" : "I have never been here before";
   var output = `
+    All the inputs are valid!\n
     Name: ${inputs[0]}\n
     Email: ${inputs[1]}\n
     Password: ${inputs[2]}\n
@@ -14,6 +19,7 @@ function retrieveInfo() {
     ${beenHereOutput}\n
     You may contact on ${checkbox}`
   console.log(output);
+  alert(output);
   clearForm();
 }
 
